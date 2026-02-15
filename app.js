@@ -205,6 +205,15 @@
         tab.classList.add('active');
         state.activeCategory = tab.dataset.category;
         renderMenuGrid(state.activeCategory);
+
+        // Dynamic title for SEO and UX
+        const baseName = 'Mombasa Vibe Hotel';
+        if (state.activeCategory === 'all') {
+          document.title = `Menu | ${baseName} — Authentic Swahili Restaurant`;
+        } else {
+          const cat = state.menuData.categories.find(c => c.id === state.activeCategory);
+          document.title = `${cat ? cat.name : 'Menu'} | ${baseName}`;
+        }
       });
     });
   }
@@ -276,27 +285,28 @@
     const imgSrc = item.image ? `images/${item.image}` : '';
 
     return `
-    <div class="menu-card" data-item-id="${item.id}">
+    <article class="menu-card" data-item-id="${item.id}" itemscope itemtype="https://schema.org/MenuItem">
       <div class="menu-card-image">
-        ${imgSrc ? `<img src="${imgSrc}" alt="${item.name}" loading="lazy">` : ''}
+        ${imgSrc ? `<img src="${imgSrc}" alt="${item.name}" loading="lazy" itemprop="image">` : ''}
         ${item.popular ? '<span class="menu-card-badge">Popular</span>' : ''}
         <button class="menu-card-heart ${isLiked ? 'liked' : ''}" data-item-id="${item.id}">
           ${isLiked ? '❤️' : '🤍'}
         </button>
       </div>
       <div class="menu-card-body">
-        <h3 class="menu-card-name">${item.name}</h3>
-        <p class="menu-card-desc">${item.description}</p>
+        <h3 class="menu-card-name" itemprop="name">${item.name}</h3>
+        <p class="menu-card-desc" itemprop="description">${item.description}</p>
         <div class="menu-card-footer">
-          <div class="menu-card-price">
-            KES ${item.price.toLocaleString()}
+          <div class="menu-card-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="priceCurrency" content="KES">
+            <span itemprop="price" content="${item.price}">KES ${item.price.toLocaleString()}</span>
           </div>
           <button class="btn btn-outline btn-sm menu-card-add" data-item-id="${item.id}">
             Add to Order
           </button>
         </div>
       </div>
-    </div>
+    </article>
   `;
   }
 
