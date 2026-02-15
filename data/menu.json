@@ -1,0 +1,191 @@
+{
+  "categories": [
+    {
+      "id": "seafood",
+      "name": "Seafood Platters",
+      "icon": "🦐",
+      "items": [
+        {
+          "id": "sf1",
+          "name": "Seafood Platter",
+          "description": "Grilled prawns, calamari, fish fillet, and crab claws served with coconut rice",
+          "price": 2800,
+          "image": "seafood-platter.png",
+          "popular": true
+        },
+        {
+          "id": "sf2",
+          "name": "Grilled Lobster Tail",
+          "description": "Fresh lobster tail grilled with garlic butter and served with seasonal vegetables",
+          "price": 3500,
+          "image": "lobster.png",
+          "popular": false
+        },
+        {
+          "id": "sf3",
+          "name": "Coconut Prawns",
+          "description": "Jumbo prawns cooked in rich coconut cream and Swahili spices",
+          "price": 1800,
+          "image": "coconut-prawns.png",
+          "popular": true
+        },
+        {
+          "id": "sf4",
+          "name": "Fish Tikka",
+          "description": "Marinated fish chunks grilled in tandoori spices with mint chutney",
+          "price": 1500,
+          "image": "fish-tikka.png",
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "swahili",
+      "name": "Swahili Dishes",
+      "icon": "🍛",
+      "items": [
+        {
+          "id": "sw1",
+          "name": "Biryani ya Kuku",
+          "description": "Aromatic chicken biryani cooked with saffron, cardamom, and coastal spices",
+          "price": 1200,
+          "image": "biryani.png",
+          "popular": true
+        },
+        {
+          "id": "sw2",
+          "name": "Pilau Nyama",
+          "description": "Spiced meat pilau with caramelized onions and whole spices",
+          "price": 1000,
+          "image": "pilau.png",
+          "popular": false
+        },
+        {
+          "id": "sw3",
+          "name": "Mbaazi za Nazi",
+          "description": "Pigeon peas in coconut sauce served with freshly baked chapati",
+          "price": 600,
+          "image": "mbaazi.png",
+          "popular": false
+        },
+        {
+          "id": "sw4",
+          "name": "Swahili Fish Curry",
+          "description": "Tender fish simmered in a rich tamarind and coconut curry",
+          "price": 1400,
+          "image": "fish-curry.png",
+          "popular": true
+        }
+      ]
+    },
+    {
+      "id": "grilled",
+      "name": "Grilled Specials",
+      "icon": "🔥",
+      "items": [
+        {
+          "id": "gr1",
+          "name": "Mishkaki Platter",
+          "description": "Assorted grilled meat skewers with kachumbari and ugali",
+          "price": 1600,
+          "image": "mishkaki.png",
+          "popular": true
+        },
+        {
+          "id": "gr2",
+          "name": "Nyama Choma",
+          "description": "Slow-roasted goat ribs with traditional accompaniments",
+          "price": 1800,
+          "image": "nyama-choma.png",
+          "popular": true
+        },
+        {
+          "id": "gr3",
+          "name": "Grilled Chicken Quarter",
+          "description": "Flame-grilled chicken marinated in coastal herbs and lime",
+          "price": 900,
+          "image": "grilled-chicken.png",
+          "popular": false
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks & Refreshments",
+      "icon": "🥤",
+      "items": [
+        {
+          "id": "dr1",
+          "name": "Madafu (Fresh Coconut)",
+          "description": "Chilled fresh coconut water served in the shell",
+          "price": 200,
+          "image": "madafu.png",
+          "popular": true
+        },
+        {
+          "id": "dr2",
+          "name": "Tamarind Juice",
+          "description": "Refreshing homemade tamarind juice with a hint of ginger",
+          "price": 250,
+          "image": "tamarind.png",
+          "popular": false
+        },
+        {
+          "id": "dr3",
+          "name": "Passion Fruit Mocktail",
+          "description": "Fresh passion fruit blended with mint and soda",
+          "price": 350,
+          "image": "passion-mocktail.png",
+          "popular": false
+        },
+        {
+          "id": "dr4",
+          "name": "Dawa Cocktail",
+          "description": "Signature Kenyan cocktail with honey, lime, and vodka",
+          "price": 500,
+          "image": "dawa.png",
+          "popular": true
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "icon": "🍮",
+      "items": [
+        {
+          "id": "ds1",
+          "name": "Kashata",
+          "description": "Traditional coconut and sugar confection",
+          "price": 200,
+          "image": "kashata.png",
+          "popular": false
+        },
+        {
+          "id": "ds2",
+          "name": "Mandazi & Ice Cream",
+          "description": "Freshly fried mandazi served with vanilla ice cream and honey drizzle",
+          "price": 450,
+          "image": "mandazi.png",
+          "popular": true
+        },
+        {
+          "id": "ds3",
+          "name": "Halwa",
+          "description": "Rich Swahili halwa dessert with cardamom and ghee",
+          "price": 300,
+          "image": "halwa.png",
+          "popular": false
+        }
+      ]
+    }
+  ],
+  "whatsappNumber": "254700000000",
+  "restaurantInfo": {
+    "name": "Mombasa Vibe Hotel",
+    "tagline": "Where the Coast Comes Alive",
+    "address": "Nyali Beach Road, Mombasa",
+    "hours": "Mon-Sun: 11:00 AM - 11:00 PM",
+    "phone": "+254 700 000 000"
+  }
+}
