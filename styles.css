@@ -1329,6 +1329,18 @@ button {
   }
 }
 
+/* ---------- Loading State ---------- */
+.loading-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--spacing-4xl) 0;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  font-style: italic;
+  animation: pulse 2s infinite ease-in-out;
+}
+
 /* ---------- Image Fallback ---------- */
 .img-error {
   display: flex;
